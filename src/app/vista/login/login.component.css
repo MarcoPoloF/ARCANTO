@@ -1,0 +1,35 @@
+.fondo{
+  background-image: url("src/assets/login/fondo-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.placeholder{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.label{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.bcInput{
+  background: #F8F8F8;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  width: 332px;
+  height: 45px;
+}
+.boton{
+  background: #4564AA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  width: 130px;
+  height: 44px;
+}

@@ -1,0 +1,39 @@
+<app-menu></app-menu>
+<section class="section my-auto py-5 min-vh-100">
+  <div class="py-5"></div>
+ <div class="container min-vh-100">
+   <div class="row my-auto">
+    <div class="col-md-12">
+    <h4 class="font-bold">Mis reportes</h4>
+    </div>
+   </div>
+   <div class="row py-5">
+     <div class="col-md-4 col-sm-12 pt-5" *ngFor="let carga of cargas">
+       <div class="card tarjeta">
+         <div class="card-body">
+           <div class="card-text">
+             <label for="nombre" class="form-label">Nombre de reporte</label>
+             <h3 id="nombre" class="text">{{carga.nombre}}</h3>
+             <label for="cliente" class="form-label">Razón social</label>
+             <h3 id="cliente" class="text">{{carga.usuario.cliente.nombre}}</h3>
+             <label for="razon" class="form-label">Nombre de cliente</label>
+             <h3 id="razon" class="text">{{carga.usuario.nombre_c}}</h3>
+           </div>
+         </div>
+         <div class="card-footer">
+           <div class="my-2">
+             <p class="font-bold text-center">
+               <a class="btn btn-outline-primary" role="button" href="{{resourceService.Verdocumento(carga.ruta)}}" target="_blank">Ver documento</a>
+             </p>
+           </div>
+           <div class="my-2">
+             <p class="font-bold text-center">
+               <a class="btn btn-outline-danger" role="button" href="{{resourceService.descargaDocumento(carga.ruta)}}" target="_blank">Descargar documento</a>
+             </p>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</section>

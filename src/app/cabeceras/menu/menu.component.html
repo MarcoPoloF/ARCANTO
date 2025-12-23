@@ -1,0 +1,44 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark" *ngIf="checkurl()">
+  <div class="container-fluid mx-2">
+    <a [routerLink]="['/home']" routerLinkActive="router-link-active" class="navbar-brand">
+      <img src="assets/home/finanzas.png" alt="Finanzas Inteligentes" class="img-fluid" style="max-width: 120px;">
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-target="#navBar" data-bs-toggle="collapse"
+    aria-controls="navBar" aria-expanded="false" aria-label="Toggle">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navBar">
+      <div class="mx-auto"></div>
+      <ul class="navbar-nav text-start " style="font-size: 26px;">
+
+        <li class="navbar-item" *ngIf="!autoservicio.isAuthenticated()">
+          <a [routerLink]="['/home']" fragment="equipo" class="nav-link px-md-3 font-menu" style="color: white;" routerLinkActive="router-link-active">
+            Conócenos
+          </a>
+        </li>
+        <li class="navbar-item" *ngIf="!autoservicio.isAuthenticated()" >
+          <a [routerLink]="['/home']" fragment="contacto" class="nav-link px-md-3 font-menu" style="color: white;" routerLinkActive="router-link-active">
+            Contacto
+          </a>
+        </li>
+        <li class="navbar-item" *ngIf="!autoservicio.isAuthenticated()">
+          <a href="https://calendly.com/piturbide/finanzas_inteligentes" target="_blank" class="nav-link px-md-3 font-menu" style="color: white;" routerLinkActive="router-link-active">
+           Agenda tu cita
+          </a>
+        </li>
+        <li class="navbar-item" *ngIf="!autoservicio.isAuthenticated()">
+          <a [routerLink]="['/login']" target="_blank" class="nav-link px-md-3 font-menu" style="color: white;" routerLinkActive="router-link-active">
+            Iniciar sesión
+          </a>
+        </li>
+
+        <li class="navbar-item" *ngIf="autoservicio.isAuthenticated()">
+          <a  [routerLink]="['/dashboard']"  class=" nav-link px-md-3 font-menu">Menú reportes </a></li>
+        <li class="navbar-item" *ngIf="autoservicio.isAuthenticated()">
+          <a  [routerLink]="['/support']"   class=" nav-link px-md-3 font-menu"><i class="far fa-question-circle"></i> Ayuda</a></li>
+        <li class="navbar-item" *ngIf="autoservicio.isAuthenticated()">
+        <a  href="" (click)="OnLogOut()"  class=" nav-link px-md-3 font-menu">Cerrar sesión</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

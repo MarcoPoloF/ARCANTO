@@ -1,0 +1,124 @@
+.section{
+  background-image: url("src/assets/phantom/Bloque1.png");
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+}
+.cv{
+  background: rgba(192, 214, 241, 0.6);
+  border: 1px solid #D4E2F2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.title{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+}
+.tarjeta{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.editar{
+  margin-left: 11em;
+}
+.editar-n{
+  margin-left: 14em;
+}
+@media (min-width: 600px) and (max-width: 740px) {
+  .editar{
+    position: absolute;
+    margin-left: 12em !important;
+  }
+  .editar-n{
+    position: absolute;
+    margin-left: 14em !important;
+  }
+  .title{
+    font-size: 16px !important;
+  }
+  .text{
+    font-size: 12px !important;
+  }
+  .texto{
+    font-size: 10px !important;
+  }
+}
+@media screen and (min-width: 1400px){
+  .editar{
+    margin-left: 10em !important;
+  }
+  .editar-n{
+    margin-left: 12em !important;
+  }
+}
+@media (min-width: 750px) and (max-width: 1024px){
+  .editar{
+    margin-left: 3em !important;
+  }
+  .editar-n{
+    margin-left: 4em !important;
+  }
+  .title{
+    font-size: 16px !important;
+  }
+  .text{
+    font-size: 12px !important;
+  }
+  .texto{
+    font-size: 10px !important;
+  }
+}
+@media (min-width: 300px) and (max-width: 599px) {
+  .editar{
+    margin-left: 2em !important;
+  }
+  .editar-n{
+    margin-left: 3em !important;
+  }
+  .title{
+    font-size: 14px !important;
+  }
+  .text{
+    font-size: 12px !important;
+  }
+  .texto{
+    font-size: 10px !important;
+  }
+  .card-body{
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+.title{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.text{
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+.title{
+  font-size: 30px;
+  line-height: 35px;
+
+  color: #1F3157;
+}
+.texto{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
